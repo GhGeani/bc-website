@@ -1,0 +1,17 @@
+{
+  "name": "brancoveanu-glamping",
+  "version": "1.0.0",
+  "description": "Brancoveanu Glamping presentation website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server.js"
+  },
+  "author": "Geani Gherghe",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "12.0.3",
+    "express": "4.17.2",
+    "helmet": "5.0.2"
+  }
+}
