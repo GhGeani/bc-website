@@ -5,8 +5,6 @@ const helmet = require('helmet');
 
 const app = express();
 
-app.use(helmet());
-
 dotenv.config();
 
 app.get('/', (req, res) => {
