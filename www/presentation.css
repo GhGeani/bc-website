@@ -96,10 +96,39 @@ body {
   outline: none;
 }
 
+#title {
+  margin-right: 20px;
+}
+
+.rating {
+  opacity: .7;
+  transition: .1s;
+  cursor: pointer;
+}
+
+.rating:hover {
+  opacity: 1;
+}
+
 #navbar-open > svg, #navbar-close > svg {
   width: 70%;
   height: 70%;
   fill: var(--main-text-color);
+}
+
+.quote {
+  background-color: var(--main-text-color);
+  border-radius: 10px;
+  cursor: default;
+}
+
+.quote-img {
+  margin-right: 20px;
+}
+
+.blockquote {
+  color: var(--second-background-color)!important;
+  font-style: italic;
 }
 
 @media (max-width: 1400px) {
@@ -109,7 +138,7 @@ body {
   }
 
   #navbar-links {
-    position: fixed;
+    position: absolute;
     transition: all .5s ease-out;
     left: -100vw;
     background-color: var(--second-background-color);
@@ -177,7 +206,7 @@ body {
 }
 
 #location-section > div {
-  padding-top: 9rem;
+  padding-top: 5rem;
 }
 
 #location-section:before{
@@ -262,6 +291,12 @@ hr.rounded {
   max-height: 80vh;
 }
 
+#image-modal {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
 #dining-room {
   background-color: var(--second-background-color);
   position: relative;
@@ -313,4 +348,5 @@ hr.rounded {
   width: 48px;
   height: 48px;
   margin-right: 20px;
+  margin-left: 20px;
 }

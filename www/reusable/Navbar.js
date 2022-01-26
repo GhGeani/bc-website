@@ -28,9 +28,9 @@ class Navbar extends HTMLElement {
         <div class="col-12 d-xxl-flex justify-content-center pb-3" id="navbar-links">
           <a href="/acasa.html">Acasă</a>
           <a href="/despre.html">Despre Noi</a>
-          <a href="/galerie.html">Galerie</a>
           <a href="/facilitati.html">Ce oferim</a>
           <a href="/obiective-turistice.html">Obiective Turistice</a>
+          <a href="/galerie.html">Galerie</a>
           <a href="/activitati.html">Activități</a>
           <a href="/cazari.html">Cazări</a>
           <a href="/acasa.html#location-section">Contact</a>

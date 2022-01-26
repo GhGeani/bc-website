@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+  // get reviews from google
+
+  // const reviewsUrl = `https://mybusiness.googleapis.com/v4/accounts/{accountId}/locations/{locationId}/reviews`;
+
   const body = document.getElementsByTagName('body')[0];
   
   // navbar animation
