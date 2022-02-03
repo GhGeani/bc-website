@@ -8,7 +8,7 @@ class Navbar extends HTMLElement {
     <nav class="container-fluid bg-nav p-3" id="navbar">
         <div class="row justify-content-center">
           <div class="col-8 col-md-4 col-xxl-3 d-xxl-flex justify-content-center mb-0 mb-xxl-4">
-            <img id="navbar-logo" width="450px" height="250px" src="/assets/logo.png" alt="Brancoveanu Glamping">
+            <img id="navbar-logo" width="250" height="250 " src="/assets/logo.png" alt="Brancoveanu Glamping">
           </div>
           <div class="col-4 col-md-8 col-xxl-9 d-flex justify-content-end align-items-center d-xxl-none">
             <div id="navbar-toggle-button">
@@ -32,7 +32,7 @@ class Navbar extends HTMLElement {
           <a href="/obiective-turistice.html">Obiective Turistice</a>
           <a href="/galerie.html">Galerie</a>
           <a href="/activitati.html">Activități</a>
-          <a href="/cazari.html">Cazări</a>
+          <a href="/rezervari.html">Rezervări</a>
           <a href="/acasa.html#location-section">Contact</a>
         </div>
     </nav>

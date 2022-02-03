@@ -1,12 +1,11 @@
 /* colors */
 :root {
-  --main-background-color: #0A0A0A;
-  --second-background-color: #121114;
-  /* 1F1D22 */
+  --main-background-color: #0e0817;
+  --second-background-color: #180b2e;
   --main-text-color: #FCFCFC;
   --second-text-color: #FFFFFF;
 
-  --hovered-link-color: #73502d;
+  --hovered-link-color: #6a6383;
   --focused-link-color: #653b58;
 }
 
@@ -297,25 +296,26 @@ hr.rounded {
   -webkit-user-select: none;
 }
 
-#dining-room {
-  background-color: var(--second-background-color);
+#about-us {
   position: relative;
-  padding-top: 7rem;
+  padding-bottom: 13rem;
 }
 
-#dining-room::before {
+#about-us::before {
   position: absolute;
-  padding-top: 9rem;
-  margin-bottom: 3rem;
   content: '';
-  width: 0;
-  height: 0;
-  top: -1px;
-  right: 0;
+  top: 0;
+  left: 0;
+  background-image: url('/assets/images/aboutus.jpeg');
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: .4;
   border-right: 100vw solid transparent;
-  border-top: 6rem solid var(--main-background-color);
-  -moz-transform: scale(1);
-  -webkit-backface-visibility: hidden;
+  border-bottom: 6rem solid var(--main-background-color);
+
 }
 
 .f-card {
@@ -324,14 +324,19 @@ hr.rounded {
   margin: 10px;
   padding: 20px;
   transition: .3s;
-  opacity: .7;
+  opacity: .9;
   transform: scale(1);
   cursor: default;
 }
 
 .f-card:hover {
   opacity: 1;
-  transform: scale(1.1);
+  transform: scale(1.01);
+}
+
+.a-link {
+  text-decoration: none;
+  cursor: pointer!important;
 }
 
 .social-link > svg {
@@ -349,4 +354,104 @@ hr.rounded {
   height: 48px;
   margin-right: 20px;
   margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.h-diff, .m-diff, .l-diff {
+  position: relative;
+}
+
+.h-diff::before, .m-diff::before, .l-diff::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 32px;
+  opacity: .3;
+}
+
+.h-diff::before {
+  background-color: red;
+}
+
+.m-diff::before {
+  background-color: blue;
+}
+
+.l-diff::before {
+  background-color: green;
+}
+
+#mountain-trails-section {
+  position: relative;
+  min-height: 500px;
+  opacity: .95;
+  transition: .2s;
+  transform: scale(1);
+  text-decoration: none;
+}
+
+#mountain-trails-section:hover {
+  opacity: 1;
+  transform: scale(1.01);
+}
+
+#mountain-trails-section::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/images/map.png');
+  opacity: 1;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -1;
+}
+
+.section-title {
+  position: relative;
+  padding: 50px;
+}
+
+.section-title::before {
+  position: absolute;
+  background-color: var(--second-background-color);
+  opacity: .3;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.arrow {
+  transform: rotateZ(-90deg);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#clay-section {
+  position: relative;
+  background-color: var(--second-background-color);
+  padding-top: 9rem;
+}
+
+#clay-section::before {
+  position: absolute;
+  padding-top: 9rem;
+  margin-bottom: 3rem;
+  content: '';
+  width: 0;
+  height: 0;
+  top: -1px;
+  right: 0;
+  border-right: 100vw solid transparent;
+  border-top: 6rem solid var(--main-background-color);
+  -moz-transform: scale(1);
+  -webkit-backface-visibility: hidden;
 }
