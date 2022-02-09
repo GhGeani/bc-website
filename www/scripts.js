@@ -7,33 +7,36 @@ document.addEventListener('DOMContentLoaded', () => {
   const body = document.getElementsByTagName('body')[0];
   
   // navbar animation
-
+  const navBar = document.getElementById('nav-bar');
   const openToggle = document.getElementById('navbar-open');
   const closeToggle = document.getElementById('navbar-close');
   const navLinks = document.getElementById('navbar-links');
-  // const navbar = document.getElementById('navbar');
 
   if (openToggle && closeToggle) {
     openToggle.addEventListener('click', () => {
-      openToggle.classList.add('d-none');
-      closeToggle.classList.remove('d-none');
 
-      navLinks.style.left = '0px';
-      navLinks.style.height = '100vh';
-      body.style.height = '100vh';
+      navLinks.style.transform = 'translateX(0%)';
+      // body.style.height = '100vh';
       body.style.overflow = 'hidden';
   
     });
   
     closeToggle.addEventListener('click', () => {
-      openToggle.classList.remove('d-none');
-      closeToggle.classList.add('d-none');
   
-      navLinks.style.left = '-100vw';
-      body.style.height = 'auto';
+      navLinks.style.transform = 'translateX(-100%)';
       body.style.overflow = 'auto';
     });
   }
+
+  const navLinkPos = navLinks.offsetTop;
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > navLinkPos + 10) {
+      navLinks.classList.add('sticky');
+    }
+     else {
+      navLinks.classList.remove('sticky');
+    }
+  });
 
 
 
