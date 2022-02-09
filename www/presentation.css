@@ -204,7 +204,7 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   position: relative;
-  background-color: var(--main-background-color);
+  background-color: var(--second-background-color);
 }
 
 #location-section {
@@ -216,20 +216,6 @@ body {
   padding-top: 5rem;
 }
 
-#location-section:before{
-  position: absolute;
-  padding-top: 9rem;
-  margin-bottom: 3rem;
-  content: '';
-  width: 0;
-  height: 0;
-  top: -1px;
-  right: 0;
-  border-right: 100vw solid transparent;
-  border-top: 6rem solid var(--main-background-color);
-  -moz-transform: scale(1);
-  -webkit-backface-visibility: hidden;
-}
 
 hr.rounded {
   border-top: 5px solid var(--main-text-color);
@@ -308,6 +294,46 @@ hr.rounded {
   position: relative;
   padding-bottom: 13rem;
 }
+
+#photo-section {
+  background-color: var(--second-background-color);
+}
+
+#first-photo, #second-photo, #third-photo {
+  position: relative;
+}
+
+#first-photo::before, #second-photo::before, #third-photo::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .4;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  transform: skewY(7deg);
+}
+
+.home-photo-text {
+  padding: 15% 0px 15% 0px;
+}
+
+#first-photo::before {
+  background-image: url('/assets/images/hero-img.jpeg');
+}
+
+#second-photo::before {
+  background-image: url('/assets/images/nature-6.jpeg');
+}
+
+#third-photo::before {
+  background-image: url('/assets/images/igloo-8.jpeg');
+}
+
+
 
 #about-us::before {
   position: absolute;
