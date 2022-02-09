@@ -299,7 +299,7 @@ hr.rounded {
   background-color: var(--second-background-color);
 }
 
-#first-photo, #second-photo, #third-photo {
+#first-photo, #second-photo, #third-photo, .t-card {
   position: relative;
 }
 
@@ -321,6 +321,19 @@ hr.rounded {
   padding: 15% 0px 15% 0px;
 }
 
+.t-card::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .4;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('/assets/images/map.png');
+}
+
 #first-photo::before {
   background-image: url('/assets/images/hero-img.jpeg');
 }
@@ -332,7 +345,6 @@ hr.rounded {
 #third-photo::before {
   background-image: url('/assets/images/igloo-8.jpeg');
 }
-
 
 
 #about-us::before {
@@ -416,11 +428,6 @@ hr.rounded {
   border-bottom: 6rem solid var(--second-background-color);
 }
 
-#f-second-section::before {
-
-}
-
-
 .h-diff, .m-diff, .l-diff {
   position: relative;
 }
@@ -499,23 +506,6 @@ hr.rounded {
   margin-right: 10px;
 }
 
-#clay-section {
-  position: relative;
+#o-first-section, #g-first-section, #g-third-section, #a-first-section, #a-second-section {
   background-color: var(--second-background-color);
-  padding-top: 9rem;
-}
-
-#clay-section::before {
-  position: absolute;
-  padding-top: 9rem;
-  margin-bottom: 3rem;
-  content: '';
-  width: 0;
-  height: 0;
-  top: -1px;
-  right: 0;
-  border-right: 100vw solid transparent;
-  border-top: 6rem solid var(--main-background-color);
-  -moz-transform: scale(1);
-  -webkit-backface-visibility: hidden;
 }
