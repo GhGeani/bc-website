@@ -65,8 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gallerySection.style.opacity = '0';
         gallerySection.style.pointerEvents = 'none';
         galleryModal.style.opacity = '1';
-        body.style.height = '100vh';
-        body.style.overflow = 'hidden';        
+        body.style.overflow = 'hidden';  
       });
     }
   }
@@ -76,7 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
       gallerySection.style.opacity = '1';
       gallerySection.style.pointerEvents = 'auto';
       galleryModal.style.opacity = '0';
-      body.style.height = 'auto';
       body.style.overflow = 'auto';
     });
   }

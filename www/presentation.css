@@ -266,7 +266,7 @@ hr.rounded {
 
 #modal-image {
   width: 100%;
-  max-height: 80vh;
+  max-height: 100%;
   transition: .5s;
   object-fit: cover;
 }
@@ -281,7 +281,26 @@ hr.rounded {
 }
 
 #image-column {
-  max-height: 80vh;
+  height: 100%;
+}
+
+#close-modal, #prev-image, #next-image {
+  position: fixed;
+}
+
+#close-modal {
+  right: 5px;
+  top: 5px;
+}
+
+#prev-image {
+  left: 5px;
+  top: 45vh;
+}
+
+#next-image {
+  right: 5px;
+  top: 45vh;
 }
 
 #image-modal {
