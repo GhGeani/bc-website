@@ -227,7 +227,11 @@ hr.rounded {
 }
 
 #footer {
-  background-color: var(--second-background-color);
+  background-color: var(--focused-link-color);
+}
+
+.footer-header {
+  padding-left: 10px;
 }
 
 .g-photo, .p-photo {
