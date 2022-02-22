@@ -17,7 +17,7 @@ class Navbar extends HTMLElement {
             class="nav-link"
             href="https://www.facebook.com/BrancoveanuComplex/"
           >
-            <img class="nav-icon" src="/assets/doodle/facebook.svg" />
+            <img class="nav-icon" src="/assets/doodle/facebook.svg" loading="lazy" />
             <small class="d-none d-lg-inline-block"
               >/BrancoveanuComplex</small
             >
@@ -28,7 +28,7 @@ class Navbar extends HTMLElement {
             href="https://www.instagram.com/glampingbrancoveanu/"
             class="small-copy col-9"
           >
-            <img class="nav-icon" src="/assets/doodle/instagram.svg" />
+            <img class="nav-icon" src="/assets/doodle/instagram.svg" loading="lazy" />
             <small class="d-none d-lg-inline-block"
               >/glampingbrancoveanu</small
             >
@@ -43,6 +43,7 @@ class Navbar extends HTMLElement {
             class="img-fluid"
             src="/assets/logo.png"
             alt="Brâncoveanu glamping"
+            loading="lazy"
           />
         </div>
 
@@ -52,7 +53,7 @@ class Navbar extends HTMLElement {
             class="nav-link"
             href="mailto:brancoveanuglamping@gmail.com"
           >
-            <img class="nav-icon" src="/assets/doodle/email.svg" />
+            <img class="nav-icon" src="/assets/doodle/email.svg" loading="lazy" />
             <small class="d-none d-lg-inline-block"
               >brancoveanuglamping@gmail.com</small
             >
@@ -63,7 +64,7 @@ class Navbar extends HTMLElement {
             href="tel:+40757461574"
             class="small-copy col-9"
           >
-            <img class="nav-icon" src="/assets/doodle/phone.svg" />
+            <img class="nav-icon" src="/assets/doodle/phone.svg" loading="lazy" />
             <small class="d-none d-lg-inline-block">+40 757 461 574</small>
           </a>
         </div>
