@@ -1,2 +1,2 @@
 # bc-website
-# [brancoveanu glamping] (http://www.brancoveanuglamping.com)
+# [brancoveanu glamping](http://www.brancoveanuglamping.com)
