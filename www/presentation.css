@@ -337,7 +337,6 @@ hr.rounded {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  transform: skewY(7deg);
 }
 
 .home-photo-text {
