@@ -2,10 +2,13 @@ const dotenv = require('dotenv')
 const path = require('path');
 const fs = require('fs');
 const express = require('express');
+const sslRedirect = require('heroku-ssl-redirect').default;
 
 const app = express();
 
 dotenv.config();
+
+app.use(sslRedirect());
 
 app.get('/photos-names', (req, res) => {
   try {
